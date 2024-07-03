@@ -9,7 +9,7 @@
 <body>
     <header>
         <div class="logo">
-            <img src="image/logo.jpeg" alt="School Logo">
+        <img src="image/logo.jpeg" alt="School Logo">
         </div>
         <nav>
             <ul>
