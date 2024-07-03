@@ -1,18 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Admission</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1>Admission Form</h1>
+    </header>
+    <main>
+        <section id="admission-form">
+            <form action="process_admission.php" method="POST">
+                <label for="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="fullname" required><br><br>
 
-<h1>All new Students in Kinder through Grade 12 seeking admittance must Submit:</h1>
-<p> - Copy of Passport or Birth certificate;
-    - Completed Application Form; 
-    - Completed Health Form;
-    - Report Cards (For 3 previous classes);
-    - Take Entrance Test at School (Math, English);
-    - Basic English and Mathematics Knowledge.
-</p>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
 
+                <label for="phone">Phone Number:</label><br>
+                <input type="text" id="phone" name="phone" required><br><br>
+
+                <label for="grade">Grade Applying For:</label><br>
+                <select id="grade" name="grade" required>
+                    <option value="">Select Grade</option>
+                    <option value="9">Grade 9</option>
+                    <option value="10">Grade 10</option>
+                    <option value="11">Grade 11</option>
+                    <option value="12">Grade 12</option>
+                </select><br><br>
+
+                <label for="message">Message (Optional):</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <?php echo date('Y'); ?> High School. All rights reserved.</p>
+    </footer>
 </body>
 </html>
