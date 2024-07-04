@@ -21,7 +21,7 @@
     <main>
         <section id="home">
             <h2>Home</h2>
-            <p>Welcome to our school's website.</p>
+            <p>Welcome to our school website.</p>
         </section>
 
         <section id="about">
