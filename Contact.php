@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Contact Us</title>
-</head>
-<body>
-    <h2>Contact Us</h2>
-    
-    <?php
+<?php
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Process form submission here
         // Example: sending an email
@@ -25,6 +16,25 @@
         }
     }
     ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="About.php">About</a></li>
+                <li><a href="Contact.php">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+</head>
+<body>
+    <h2>Contact Us</h2>
+    
+   
 
     <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
         <label for="name">Name:</label>
