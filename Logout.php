@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logout</title>
     <link rel="stylesheet" href = "styles.css">
-</head>
+<head>
 <body>
 <?php include_once ("templates/nav.php")?>
 </head>
