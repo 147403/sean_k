@@ -26,10 +26,13 @@
                 <label for="grade">Grade Applying For:</label><br>
                 <select id="grade" name="grade" required>
                     <option value="">Select Grade</option>
+                    <option value="7">Grade 7</option>
+                    <option value="8">Grade 8</option>
                     <option value="9">Grade 9</option>
                     <option value="10">Grade 10</option>
                     <option value="11">Grade 11</option>
                     <option value="12">Grade 12</option>
+                    
                 </select><br><br>
 
                 <label for="message">Message (Optional):</label><br>
