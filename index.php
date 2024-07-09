@@ -4,19 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BAIA School</title>
-    <link rel="stylesheet" href="styles.css"> <!-- You can create this file later for styling -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to BAIA School</h1>
-        <nav>
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="About.php">About</a></li>
-                <li><a href="Contact.php">Contact</a></li>
-            </ul>
-        </nav><
-    </header>
+    <?php include_once ("templates/nav.php")?>
+    <h1>Welcome to BAIA School</h1>
 
     <main>
         <section id="home">

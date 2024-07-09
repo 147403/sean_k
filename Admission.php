@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admission Form</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Admission</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <header>
+    <?php include_once ("templates/nav.php")?>
+
         <h1>Admission Form</h1>
-    </header>
+
     <main>
         <section id="admission-form">
             <form action="process_admission.php" method="POST">

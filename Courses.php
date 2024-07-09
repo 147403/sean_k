@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>High School Courses</title>
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
+<?php include_once ("templates/nav.php")?>
     <header>
         <h1>High School Courses</h1>
     </header>

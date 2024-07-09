@@ -3,23 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - School Name</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <title>About Us - BAIA School</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+   
 </head>
 <body>
-    <header>
-        <div class="logo">
-        <img src="image/logo.jpeg" alt="School Logo">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="Courses.php">Courses</a></li>
-                <li><a href="About.php">About Us</a></li>
-                <li><a href="Contact.php">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <?php include_once ("templates/nav.php")?>
 
     <main>
         <section id="about">
