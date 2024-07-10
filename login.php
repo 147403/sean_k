@@ -18,6 +18,5 @@ echo '<input type="password" id="password" name="password"><br><br>';
 echo '<input type="submit" value="Log in">';
 echo '</form>';
 ?>  
-    
 </body>
 </html>

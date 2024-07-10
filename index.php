@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link rel="stylesheet" href="styles.css">
+<title>Background Image</title>
+</head>
+<body>
+</body>
+</html>      
+<style> body{
+    background-image: url(../DSC2024.1.jpeg);
+}
+</style>
+</head>
+<body>
+</body>
+</html>        
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BAIA School</title>
@@ -8,12 +22,12 @@
 </head>
 <body>
     <?php include_once ("templates/nav.php")?>
-    <h1>Welcome to BAIA School</h1>
+    <h1>Welcome to my website</h1>
 
     <main>
         <section id="home">
             <h2>Home</h2>
-            <p>Welcome to our school website.</p>
+            <p>Welcome to BAIA.</p>
         </section>
 
         <section id="about">

@@ -6,9 +6,17 @@ nav ul {
   }
   
   nav li {
-    /* display: inline-block; */
     margin-right: 20px;
   }
   nav a{
     text-decoration: none;
   }
+
+  body{
+      background-image: url('DSC2024.1.jpeg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+  }
+
+ 
