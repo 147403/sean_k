@@ -13,7 +13,7 @@
     <main>
         <section id="about">
             <h1>About Us</h1>
-            <img src="image/DSC02422 (1).png" alt="">
+            <img src="image/DSC2024.1.jpeg" alt="">
             <p>Welcome to [BAIA], where [we provide a holistic, individualized, and outstanding education utilizing learning standards
                 based on American curriculum].</p>
             

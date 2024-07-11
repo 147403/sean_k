@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<link rel="stylesheet" href="styles.css">
-<title>Background Image</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 </body>
 </html>      
-<style> body{
-    background-image: url(../DSC2024.1.jpeg);
-}
-</style>
-</head>
-<body>
+<head>
+  <style>
+    body {
+        background-image: url('DSC2024.1.jpeg');
+        background-size: cover;
+        background-position: center;
+        background-color: bisque;
+    }
+  </style>
+</head>    
+
+<body style="background-image: url('DSC2024.1.jpeg');
 </body>
 </html>        
     <meta charset="UTF-8">
