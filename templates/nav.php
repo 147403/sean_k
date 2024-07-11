@@ -10,6 +10,7 @@
                 <li><a href="Courses.php">Courses</a></li>
                 <li><a href="signin.php">Log In</a></li>
                 <li><a href="MediaCenter.php">Media Center</a></li>
+                <li><a href="Calendar.php">Calendar</a></li>
                 <li><a href="Admission.php">Admission</a></li>
                 <li><a href="Logout.php">Logout</a></li>
                 <li><a href="view_messages.php">view_messages</a></li>
