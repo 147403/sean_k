@@ -40,7 +40,7 @@
 
         <section id="about">
     
-            <p>To provide a holistic, individualized, and outstanding education utilizing learning standards
+            <p> where we provide a holistic, individualized, and outstanding education utilizing learning standards
                 based on American curriculum. Our multicultural environment and educational philosophy
                 foster communication, critical thinking, leadership skills, digital literacy and exemplary
                 character, in order to prepare students for their future pursuits.
@@ -49,8 +49,7 @@
         </section>
 
         <section id="contact">
-            <h2>Contact Us</h2>
-            <p>Reach out to us via phone or email.</p>
+        
         </section>
     </main>
 
