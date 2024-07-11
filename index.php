@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+
 </head>
-<body>
-</body>
-</html>      
-<head>
+
+
+<   
+<?php include_once("templates/test.php")?>
+</style>   
   <style>
     body {
         background-image: url('DSC2024.1.jpeg');
@@ -15,28 +18,28 @@
         background-color: bisque;
     }
   </style>
-</head>    
+    <?php include_once ("templates/nav.php")?>
+   
 
 <body style="background-image: url('DSC2024.1.jpeg');
 </body>
 </html>        
-    <meta charset="UTF-8">
+   
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BAIA School</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <?php include_once ("templates/nav.php")?>
-    <h1>Welcome to my website</h1>
+    <h1></h1>
 
     <main>
         <section id="home">
-            <h2>Home</h2>
+    
             <p>Welcome to BAIA.</p>
         </section>
 
         <section id="about">
-            <h2>About Us</h2>
+    
             <p>To provide a holistic, individualized, and outstanding education utilizing learning standards
                 based on American curriculum. Our multicultural environment and educational philosophy
                 foster communication, critical thinking, leadership skills, digital literacy and exemplary

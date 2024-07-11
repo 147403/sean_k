@@ -5,8 +5,8 @@
         <nav>
             <ul>
                 <li><a href="index.php">Home</a></li>
-                <li><a href="About.php">About</a></li>
-                <li><a href="Contact.php">Contact</a></li>
+                <li><a href="About.php">About Us</a></li>
+                <li><a href="Contact.php">Contact Us</a></li>
                 <li><a href="Courses.php">Courses</a></li>
                 <li><a href="signin.php">Log In</a></li>
                 <li><a href="MediaCenter.php">Media Center</a></li>

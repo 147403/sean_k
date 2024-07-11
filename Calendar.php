@@ -14,93 +14,46 @@ function getEventsForCurrentMonth() {
         ),
         // Add more events as needed
     );
-}
 
-// Get current month and year
-$currentMonth = date('m');
-$currentYear = date('Y');
+// Create an array of day names
+$dayNames = array(
+    'Sun',
+    'Mon',
+    'Tue',
+    'Wed',
+    'Thu',
+    'Fri',
+    'Sat'
+);
 
-// Get events for the current month
-$events = getEventsForCurrentMonth();
+// Calculate the number of days in the current month
+$daysInMonth = date('t', mktime(0, 0, 0, $month, 1, $year));
 
-// Number of days in the current month
-$daysInMonth = date('t', strtotime("$currentYear-$currentMonth-01"));
-
-// Start day of the week for the first day of the month
-$startDay = date('N', strtotime("$currentYear-$currentMonth-01"));
-
-// Create an array to store events by date
-$eventsByDate = array();
-foreach ($events as $event) {
-    $eventsByDate[$event['date']][] = $event['title'];
-}
-
-// HTML structure for the calendar
-echo '<!DOCTYPE html>';
-echo '<html lang="en">';
-echo '<head>';
-echo '<meta charset="UTF-8">';
-echo '<meta name="viewport" content="width=device-width, initial-scale=1.0">';
-echo '<title>High School Calendar</title>';
-echo '<link rel="stylesheet" href="styles.css">';
-echo '</head>';
-echo '<body>';
-echo '<header>';
-echo '<h1>High School Calendar - ' . date('F Y', strtotime("$currentYear-$currentMonth-01")) . '</h1>';
-echo '</header>';
-echo '<main>';
-echo '<section id="calendar">';
-echo '<table>';
-echo '<thead>';
+// Create a table to display the calendar
+echo '<table border="1" cellpadding="5" cellspacing="0">';
 echo '<tr>';
-echo '<th>Mon</th>';
-echo '<th>Tue</th>';
-echo '<th>Wed</th>';
-echo '<th>Thu</th>';
-echo '<th>Fri</th>';
-echo '<th>Sat</th>';
-echo '<th>Sun</th>';
+foreach ($dayNames as $day) {
+    echo "<th>$day</th>";
+}
 echo '</tr>';
 echo '</thead>';
 echo '<tbody>';
 
-// Start the calendar table
-echo '<tr>';
+// Calculate the first day of the week for the current month
+$firstDayOfWeek = date('w', mktime(0, 0, 0, $month, 1, $year));
 
-// Fill in the days of the previous month if necessary
-for ($i = 1; $i < $startDay; $i++) {
-    echo '<td></td>';
+// Fill in the table with the days of the month
+for ($i = 1; $i < $firstDayOfWeek; $i++) {
+    echo '<td>&nbsp;</td>';
 }
-
-// Fill in the days of the current month
-for ($day = 1; $day <= $daysInMonth; $day++) {
-    $date = "$currentYear-$currentMonth-" . sprintf('%02d', $day);
-    echo '<td>';
-    echo '<span class="day">' . $day . '</span><br>';
-    
-    // Display events for this day
-    if (isset($eventsByDate[$date])) {
-        foreach ($eventsByDate[$date] as $event) {
-            echo '<span class="event">' . htmlspecialchars($event) . '</span><br>';
-        }
+for ($i = 1; $i <= $daysInMonth; $i++) {
+    echo "<td>$i</td>";
+    if (($i + $firstDayOfWeek - 1) % 7 == 0) {
+        echo '</tr><tr>';
     }
-    
-    echo '</td>';
-    
-    // Move to next row if it's Sunday (end of the week)
-    if (date('N', strtotime("$currentYear-$currentMonth-$day")) == 7) {
+}
         echo '</tr>';
-        if ($day != $daysInMonth) {
-            echo '<tr>';
-        }
-    }
-}
-
-// Fill in the remaining cells of the last row
-$remainingDays = 7 - (date('N', strtotime("$currentYear-$currentMonth-$daysInMonth")));
-for ($i = 0; $i < $remainingDays; $i++) {
-    echo '<td></td>';
-}
+echo '</table>';
 
 echo '</tbody>';
 echo '</table>';

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - BAIA School</title>
+    <title>BAIA School</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
    
 </head>
@@ -11,8 +11,7 @@
     <?php include_once ("templates/nav.php")?>
 
     <main>
-        <section id="about">
-            <h1>About Us</h1>
+    
             <img src="image/DSC2024.1.jpeg" alt="">
             <p>Welcome to [BAIA], where [we provide a holistic, individualized, and outstanding education utilizing learning standards
                 based on American curriculum].</p>
