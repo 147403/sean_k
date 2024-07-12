@@ -10,7 +10,6 @@
 <body>
 <?php include_once ("templates/nav.php")?>
     <header>
-        <h1>High School Courses</h1>
     </header>
     <main>
         <section id="courses">
